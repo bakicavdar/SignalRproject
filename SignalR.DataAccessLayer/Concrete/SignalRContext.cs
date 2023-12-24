@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using SignalR.EntityLayer.Entities;
 using SignalRApi.EntityLayer.Entities;
 using System;
+=======
+﻿using System;
+>>>>>>> ab58be82600b52861538cdc424b7fc5a1425722c
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +14,7 @@ using System.Threading.Tasks;
 
 namespace SignalR.DataAccessLayer.Concrete
 {
+<<<<<<< HEAD
     public class SignalRContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -26,5 +31,10 @@ namespace SignalR.DataAccessLayer.Concrete
         public DbSet<Product> Products { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+=======
+    public class SignalRContext
+    {
+
+>>>>>>> ab58be82600b52861538cdc424b7fc5a1425722c
     }
 }
