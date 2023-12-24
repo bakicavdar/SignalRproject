@@ -29,7 +29,7 @@ namespace SignalR.DataAccessLayer.Repositories
             _context.SaveChanges();
         }
 
-        public List<T> GetAll()
+        public List<T> GetListAll()
         {
             return _context.Set<T>().ToList();
             
@@ -44,6 +44,11 @@ namespace SignalR.DataAccessLayer.Repositories
         {
             _context.Update(entity);
             _context.SaveChanges();
+        }
+
+        public List<T> GetLİstAll()
+        {
+            throw new NotImplementedException();
         }
     }
 }
