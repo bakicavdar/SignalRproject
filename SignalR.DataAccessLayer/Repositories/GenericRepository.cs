@@ -48,7 +48,7 @@ namespace SignalR.DataAccessLayer.Repositories
 
         public List<T> GetLİstAll()
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().ToList();
         }
     }
 }

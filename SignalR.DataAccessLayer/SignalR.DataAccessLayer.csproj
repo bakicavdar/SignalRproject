@@ -1,38 +1,29 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <ItemGroup>
-<<<<<<< HEAD
-=======
-    <Folder Include="EntityFramework\" />
-    <Folder Include="Abstract\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.21" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.21" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.21">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.21" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.21">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 
-  <ItemGroup>
->>>>>>> ab58be82600b52861538cdc424b7fc5a1425722c
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.25">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.25" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.25">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\SignalR.DtoLayer\SignalR.DtoLayer.csproj" />
+		<ProjectReference Include="..\SignalR.EntityLayer\SignalR.EntityLayer.csproj" />
+	</ItemGroup>
 
-<<<<<<< HEAD
-  <ItemGroup>
-    <ProjectReference Include="..\SignalR.EntityLayer\SignalR.EntityLayer.csproj" />
-  </ItemGroup>
-
-=======
->>>>>>> ab58be82600b52861538cdc424b7fc5a1425722c
 </Project>
